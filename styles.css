@@ -1,0 +1,57 @@
+/* making individual cards look nicer */
+#sprite {
+    margin: 0 auto; 
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    height: 250px;
+    width: 30vw;
+}
+
+img {
+    width: 10vw;
+}
+
+.col-1-2 {
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+#text {
+    padding: 10% 0;
+}
+
+.col-1-1 {
+    width: 100%;
+    float: left;
+}
+
+#logo {
+    width: 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-1-2 {
+        width: 100%;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .card {
+        width: 100vw;
+        float: left;
+        height: 100%;
+    }
+}
