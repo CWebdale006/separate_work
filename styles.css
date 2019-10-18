@@ -1,22 +1,26 @@
 /* making individual cards look nicer */
 #sprite {
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
+/* Increasing font size, more readable*/
 .card-title {
     font-size: 20px;
 }
 
+/* Adding a round border to make it look like a pokemon card */
 .card {
     border-radius: 10px;
-    height: 250px;
+    height: 325px;
     width: 30vw;
 }
 
+/* Makes images take up less of the page */
 img {
     width: 10vw;
 }
 
+/* Sets up the styles for our divs, and columns to put the image next to the pokemon name/type. */
 .col-1-2 {
     width: 50%;
     margin: 0;
@@ -36,22 +40,93 @@ img {
     width: 20vw;
 }
 
-@media only screen and (max-width: 600px) {
-    .col-1-2 {
-        width: 100%;
-    }
-
-    #logo {
-        width: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .card {
-        width: 100vw;
-        float: left;
-        height: 100%;
-    }
+#search {
+    padding-top: 20px;
 }
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: 2px solid #e9e9e9;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+
+}
+
+/* Media query for a screen bigger than 1000 pixels */
+@media only screen and (max-width: 1000px) {
+    .col-1-2 {
+      width: 50%;
+    }
+    
+    #logo {
+      width: 100%;
+    }
+      img {
+        width: 100%;
+      }
+    .card {
+      width: 50vw;
+      float: left;
+      height: 50vw;
+      border-radius: 0px;
+    }
+    
+  }
+  
+  /* Media query for a screen bigger than 750 pixels but smaller than 1000 */
+  @media only screen and (max-width: 750px) {
+    .col-1-2 {
+      width: 100%;
+    }
+  
+    #logo {
+      width: 100%;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    .card {
+      width: 75vw;
+      float: left;
+      height: 100vh;
+      border-radius: 0px;
+    }
+  }
+  
+  /* Media query for a screen smaller than 600 pixels */
+  @media only screen and (max-width: 600px) {
+    .col-1-2 {
+      width: 100%;
+    }
+  
+    #logo {
+      width: 100%;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    .card {
+      width: 100vw;
+      float: left;
+      height: 100vh;
+      border-radius: 0px;
+    }
+  }
