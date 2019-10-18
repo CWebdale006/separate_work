@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pokemon Home</title>
+    <title>Api Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
         <div class="card">
                 <div id="sprite">
-                    <img src="International_Pokémon_logo.svg.png" alt="pokemon logo" id="">
+                    <img src="International_Pokémon_logo.svg.png" alt="pokemon logo" id="logo">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title" align="center">Choose a pokemon!</h5>
@@ -19,10 +19,19 @@
                   <div align="center" id="buttons">
                       <a href="gible.html" class="btn btn-primary">Gible</a>
                       <a href="cubone.html" class="btn btn-primary">Cubone</a>
-                      <a href="pikachu.html" class="btn btn-primary">Foxy Boxy</a>
-                      <a href="squirtle.html" class="btn btn-primary">Squirrel</a>
-                      <a href="eevee.html" class="btn btn-primary">Foxy Boxy 2</a>
+                      <a href="pikachu.html" class="btn btn-primary">Pikachu</a>
+                      <a href="squirtle.html" class="btn btn-primary">Squirtle</a>
                 </div>
+                <div class="topnav" align="center" id="search">
+                    <form>
+                        <input type="text" id="searchBar" placeholder="Search...">
+                        <button id="submit" type="button">Submit</button>
+                        <!-- <a href="user.html" class="btn btn-secondary">Submit</a> -->
+                    </form>
+                  </div>
               </div>
+              <script src="pokemon.js"></script>
+              <!-- <script src="user.js"></script> -->
+              <!-- <script src="search.js"></script> -->
 </body>
 </html>
